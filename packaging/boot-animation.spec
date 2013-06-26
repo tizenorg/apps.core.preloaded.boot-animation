@@ -52,7 +52,7 @@ vconftool  -i set -t string memory/boot-animation/restart start:start
 
 
 %files
-%manifest boot-animation.manifest
+%manifest %{name}.manifest
 /etc/init.d/boot-ani
 /usr/share/edje/poweroff.edj
 /usr/share/edje/poweron.edj
