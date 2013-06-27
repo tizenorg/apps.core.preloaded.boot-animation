@@ -1,0 +1,8 @@
+Change-Id: I87eb94ac638f7d5e4e0d948939777d31cc04c21d
+Code-Review+2: Anas Nashif <anas.nashif@intel.com>
+Verified+1: Anas Nashif <anas.nashif@intel.com>
+Submitted-by: Anas Nashif <anas.nashif@intel.com>
+Submitted-at: Thu, 27 Jun 2013 06:28:40 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4326
+Project: apps/core/preloaded/boot-animation
+Branch: refs/heads/tizen
