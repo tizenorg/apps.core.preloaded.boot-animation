@@ -24,19 +24,15 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-#include <utilX.h>
+#include <efl_util.h>
 #include <vconf.h>
 
 #include <Elementary.h>
-#include <Ecore_X.h>
-#include <Ecore_X_Atoms.h>
 
 #include <boot-animation.h>
 #include <animation.h>
 
 static struct animation {
-	Ecore_X_Window focus_win;
-	Ecore_X_Window root_win;
 	Evas_Object *win;
 	Ecore_Window xwin;
 	Evas_Coord w;
@@ -115,11 +111,6 @@ int init_layout(const char *msg)
 					"end", "animation", _edje_cb, NULL);
 	evas_object_show(s_animation.layout);
 
-	Ecore_X_Window xwin;
-	xwin = elm_win_xwindow_get(s_animation.win);
-	ecore_x_icccm_hints_set(xwin, 0, 0, 0, 0, 0, 0, 0);
-
-
 	if (msg) {
 		if (!s_animation.txt) {
 			s_animation.txt =
@@ -169,13 +160,15 @@ void restart_animation(int state, const char *msg)
 static
 int create_window(void)
 {
-	s_animation.win = elm_win_add(NULL, "", ELM_WIN_BASIC);
+	s_animation.win = elm_win_add(NULL, "", ELM_WIN_NOTIFICATION);
 	if (!s_animation.win) {
 		fprintf(stderr, "Failed to create a new window\n");
 		return EXIT_FAILURE;
 	}
 	evas_object_smart_callback_add(s_animation.win, "delete-request",
 				       win_del, NULL);
+	elm_win_screen_size_get(s_animation.win, NULL, NULL, &s_animation.w,
+				&s_animation.h);
 	evas_object_resize(s_animation.win, s_animation.w, s_animation.h);
 
 	s_animation.evas = evas_object_evas_get(s_animation.win);
@@ -204,22 +197,15 @@ int create_window(void)
 	}
 
 	s_animation.xwin = ecore_evas_window_get(s_animation.ee);
-	ecore_x_netwm_window_type_set(s_animation.xwin,
-				      ECORE_X_WINDOW_TYPE_NOTIFICATION);
-	utilx_set_system_notification_level(ecore_x_display_get(),
-					    s_animation.xwin,
-					    UTILX_NOTIFICATION_LEVEL_HIGH);
+	efl_util_set_system_notification_level(s_animation.win,
+					    EFL_UTIL_NOTIFICATION_LEVEL_HIGH);
 
 	return EXIT_SUCCESS;
 }
 
 int init_animation(int state, const char *msg)
 {
-	s_animation.focus_win = ecore_x_window_focus_get();
-	s_animation.root_win = ecore_x_window_root_get(s_animation.focus_win);
 	s_animation.state = state;
-	ecore_x_window_size_get(s_animation.root_win, &s_animation.w,
-				&s_animation.h);
 
 	if (create_window() == EXIT_FAILURE) {
 		fprintf(stderr, "Failed to create a new window\n");

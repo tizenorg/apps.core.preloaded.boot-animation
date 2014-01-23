@@ -11,13 +11,11 @@ pkg_check_modules(pkgs REQUIRED
 	elementary
 	avsystem
 	audio-session-mgr
-	utilX
+	capi-ui-efl-util
 	vconf
-        ecore-x
         evas
         ecore-evas
         edje
-        x11
 )
 
 FOREACH(flag ${pkgs_CFLAGS})

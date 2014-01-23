@@ -29,11 +29,8 @@
 #include <unistd.h>
 
 #include <pthread.h>
-#include <utilX.h>
 
 #include <Elementary.h>
-#include <Ecore_X.h>
-#include <Ecore_X_Atoms.h>
 #include <audio-session-manager.h>
 
 #include <getopt.h>
@@ -246,11 +243,6 @@ int main(int argc, char *argv[])
 	args.argc = argc;
 	args.argv = argv;
 	args.msg = NULL;
-
-	if (ecore_x_init(NULL) == NULL) {
-		fprintf(stderr, "Cannot connect to X11 display\n");
-		return 0;
-	}
 
 	elm_init(argc, argv);
 

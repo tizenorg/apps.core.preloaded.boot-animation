@@ -11,10 +11,9 @@ BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildRequires: cmake
 BuildRequires: edje, edje-bin, embryo, embryo-bin
 BuildRequires: pkgconfig(ecore)
-BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(libexif)
 BuildRequires: pkgconfig(elementary)
-BuildRequires: pkgconfig(utilX)
+BuildRequires: pkgconfig(capi-ui-efl-util)
 BuildRequires: pkgconfig(vconf)
 BuildRequires: pkgconfig(avsystem)
 BuildRequires: pkgconfig(audio-session-mgr)
