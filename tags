@@ -1,0 +1,648 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALTERNATE_LOOP	include/wav_parser.h	/^	ALTERNATE_LOOP = 1,$/;"	e	enum:LOOP_TYPE
+BACKWARD_LOOP	include/wav_parser.h	/^	BACKWARD_LOOP = 2,$/;"	e	enum:LOOP_TYPE
+BA_DEFAULT_WINDOW_H	include/boot.h	56;"	d
+BA_DEFAULT_WINDOW_W	include/boot.h	57;"	d
+CHANNELS	include/wav_parser.h	/^enum CHANNELS {$/;"	g
+CHECK_LCD	src/animation.c	65;"	d	file:
+CHECK_Xorg	src/animation.c	64;"	d	file:
+CueChunk	include/wav_parser.h	/^} __PACK CueChunk;$/;"	t	typeref:struct:__anon5
+CueID	include/wav_parser.h	82;"	d
+CuePoint	include/wav_parser.h	/^} __PACK CuePoint;$/;"	t	typeref:struct:__anon4
+DEFAULT_EDJ_OFF	include/boot.h	30;"	d
+DEFAULT_EDJ_ON	include/boot.h	31;"	d
+DEFAULT_POWEROFF_WAV	include/boot.h	39;"	d
+DEFAULT_POWEROFF_WAV	include/boot.h	45;"	d
+DEFAULT_POWERON_WAV	include/boot.h	38;"	d
+DEFAULT_POWERON_WAV	include/boot.h	44;"	d
+DEFAULT_W	src/animation.c	187;"	d	file:
+DataChunk	include/wav_parser.h	/^} __PACK DataChunk;$/;"	t	typeref:struct:__anon3
+DataID	include/wav_parser.h	67;"	d
+EDJ_OFF	include/boot.h	32;"	d
+EDJ_ON	include/boot.h	33;"	d
+FILE_PATH_MAX	include/boot.h	59;"	d
+FORMAT	include/wav_parser.h	/^enum FORMAT {$/;"	g
+FORWARD_LOOP	include/wav_parser.h	/^	FORWARD_LOOP = 0,$/;"	e	enum:LOOP_TYPE
+FOR_CHANNEL	include/wav_parser.h	/^	FOR_CHANNEL = 4,$/;"	e	enum:CHANNELS
+FRAME24	include/wav_parser.h	/^	FRAME24 = 24,$/;"	e	enum:SMPTE
+FRAME25	include/wav_parser.h	/^	FRAME25 = 25,$/;"	e	enum:SMPTE
+FRAME30	include/wav_parser.h	/^	FRAME30 = 30,$/;"	e	enum:SMPTE
+FRAME30_WITH_DROP	include/wav_parser.h	/^	FRAME30_WITH_DROP = 29,$/;"	e	enum:SMPTE
+FactChunk	include/wav_parser.h	/^} __PACK FactChunk;$/;"	t	typeref:struct:__anon16
+FactID	include/wav_parser.h	184;"	d
+FineTune	include/wav_parser.h	/^	char FineTune;$/;"	m	struct:__anon14
+FormatChunk	include/wav_parser.h	/^} __PACK FormatChunk;$/;"	t	typeref:struct:__anon2
+FormatID	include/wav_parser.h	37;"	d
+GRP_OFF	include/boot.h	34;"	d
+GRP_ON	include/boot.h	35;"	d
+Gain	include/wav_parser.h	/^	char Gain;$/;"	m	struct:__anon14
+HighNote	include/wav_parser.h	/^	unsigned char HighNote;$/;"	m	struct:__anon14
+HighVelocity	include/wav_parser.h	/^	unsigned char HighVelocity;$/;"	m	struct:__anon14
+IBM_FORMAT_ADPCM	include/wav_parser.h	/^	IBM_FORMAT_ADPCM = 0x0103,$/;"	e	enum:FORMAT
+IBM_FORMAT_ALAW	include/wav_parser.h	/^	IBM_FORMAT_ALAW = 0x0102,$/;"	e	enum:FORMAT
+IBM_FORMAT_MULAW	include/wav_parser.h	/^	IBM_FORMAT_MULAW = 0x0101,$/;"	e	enum:FORMAT
+InstrumentChunk	include/wav_parser.h	/^} __PACK InstrumentChunk;$/;"	t	typeref:struct:__anon14
+InstrumentID	include/wav_parser.h	167;"	d
+LOG_TAG	include/log.h	24;"	d
+LOG_TAG	include/log.h	25;"	d
+LOOP_TYPE	include/wav_parser.h	/^enum LOOP_TYPE {$/;"	g
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00000.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00001.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00002.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00003.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00004.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00005.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00006.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00007.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00008.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00009.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00010.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00011.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00012.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00013.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00014.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00015.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00016.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00017.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00018.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00019.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00020.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00021.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00022.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00023.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00024.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00025.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00026.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00027.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00028.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00029.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00030.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00031.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00032.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00033.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00034.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00035.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00036.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00037.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00038.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00039.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00040.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00041.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00042.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00043.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00044.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00045.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00046.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00047.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00048.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff1_image.h	/^ image:"power_off_720_1280\/power_off_720_1280__00049.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_01.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_02.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_03.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_04.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_05.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_06.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_07.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_08.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_09.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_10.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_11.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_12.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_13.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_14.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_15.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_16.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_17.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_18.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_19.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_20.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_21.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_22.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_23.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_24.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_25.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_26.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_27.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_28.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_29.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_30.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_31.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_32.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_33.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_34.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_35.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_36.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_37.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_38.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_39.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_40.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_41.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_42.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_43.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_44.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_45.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_46.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_47.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_48.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_49.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_50.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_51.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_52.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_53.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_54.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_55.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_56.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_57.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_58.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_59.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_60.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_61.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweroff_image.h	/^ image:"720X1280_Power_off\/Tizen_power_off_62.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00000.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00001.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00002.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00003.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00004.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00005.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00006.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00007.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00008.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00009.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00010.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00011.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00012.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00013.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00014.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00015.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00016.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00017.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00018.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00019.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00020.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00021.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00022.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00023.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00024.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00025.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00026.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00027.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00028.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00029.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00030.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00031.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00032.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00033.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00034.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00035.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00036.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00037.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00038.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00039.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00040.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00041.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00042.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00043.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00044.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00045.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00046.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00047.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00048.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00049.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00050.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00051.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00052.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00053.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00054.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00055.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00056.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00057.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00058.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00059.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00060.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00061.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00062.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00063.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00064.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00065.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00066.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00067.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00068.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00069.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00070.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00071.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00072.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00073.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00074.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00075.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00076.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00077.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00078.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00079.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00080.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00081.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00082.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00083.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00084.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron1_image.h	/^ image:"power_on_720_1280\/power_on_720_1280__00085.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_01.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_02.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_03.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_04.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_05.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_06.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_07.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_08.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_09.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_10.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_11.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_12.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_13.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_14.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_15.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_16.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_17.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_18.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_19.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_20.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_21.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_22.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_23.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_24.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_25.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_26.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_27.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_28.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_29.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_30.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_31.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_32.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_33.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_34.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_35.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_36.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_37.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_38.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_39.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_40.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_41.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_42.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_43.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_44.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_45.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_46.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_47.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_48.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_49.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_50.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_51.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_52.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_53.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_54.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_55.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_56.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_57.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_58.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_59.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_60.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_61.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_62.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_63.png" LOSSY 85;$/;"	v
+LOSSY	data/mobile_poweron_image.h	/^ image:"720X1280_Power_on\/Tizen_power_on_64.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_01.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_02.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_03.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_04.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_05.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_06.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_07.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_08.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_09.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_10.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_11.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_12.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_13.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_14.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_15.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_16.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_17.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_18.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_19.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_20.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_21.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_22.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_23.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_24.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_25.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_26.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_27.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_28.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_29.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_30.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_31.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_32.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_33.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_34.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_35.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_36.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_37.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_38.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_39.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_40.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_41.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_42.png" LOSSY 85;$/;"	v
+LOSSY	data/poweroff_image.h	/^ image:"480X800_Power_off\/Tizen_power_off_43.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_01.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_02.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_03.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_04.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_05.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_06.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_07.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_08.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_09.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_10.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_11.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_12.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_13.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_14.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_15.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_16.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_17.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_18.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_19.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_20.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_21.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_22.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_23.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_24.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_25.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_26.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_27.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_28.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_29.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_30.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_31.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_32.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_33.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_34.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_35.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_36.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_37.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_38.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_39.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_40.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_41.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_42.png" LOSSY 85;$/;"	v
+LOSSY	data/poweron_image.h	/^ image:"480X800_Power_on\/Tizen_power_on_43.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_01.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_02.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_03.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_04.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_05.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_06.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_07.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_08.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_09.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_10.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_11.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_12.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_13.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_14.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_15.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_16.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_17.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_18.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_19.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_20.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_21.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_22.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_23.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_24.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_25.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_26.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_27.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_28.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_29.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_30.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_31.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_32.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_33.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_34.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_35.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_36.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_37.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_38.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_39.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_40.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_41.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_42.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweroff_image.h	/^ image:"TIZEN_W_Power_off\/Tizen_power_off_43.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_01.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_02.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_03.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_04.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_05.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_06.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_07.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_08.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_09.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_10.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_11.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_12.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_13.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_14.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_15.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_16.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_17.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_18.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_19.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_20.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_21.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_22.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_23.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_24.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_25.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_26.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_27.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_28.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_29.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_30.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_31.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_32.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_33.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_34.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_35.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_36.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_37.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_38.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_39.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_40.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_41.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_42.png" LOSSY 85;$/;"	v
+LOSSY	data/wearable_poweron_image.h	/^ image:"TIZEN_W_Power_on\/Tizen_power_on_43.png" LOSSY 85;$/;"	v
+LabelChunk	include/wav_parser.h	/^} __PACK LabelChunk;$/;"	t	typeref:struct:__anon9
+LabelID	include/wav_parser.h	106;"	d
+LabelTextChunk	include/wav_parser.h	/^} __PACK LabelTextChunk;$/;"	t	typeref:struct:__anon11
+LabelTextID	include/wav_parser.h	118;"	d
+ListChunk	include/wav_parser.h	/^} __PACK ListChunk;$/;"	t	typeref:struct:__anon15
+ListHeader	include/wav_parser.h	/^} __PACK ListHeader;$/;"	t	typeref:struct:__anon8
+ListID	include/wav_parser.h	178;"	d
+Loops	include/wav_parser.h	/^	SampleLoop Loops[];$/;"	m	struct:__anon13
+LowNote	include/wav_parser.h	/^	unsigned char LowNote;$/;"	m	struct:__anon14
+LowVelocity	include/wav_parser.h	/^	unsigned char LowVelocity;$/;"	m	struct:__anon14
+MOBILE_EDJ_OFF	include/boot.h	26;"	d
+MOBILE_EDJ_ON	include/boot.h	27;"	d
+MONOPHONIC	include/wav_parser.h	/^	MONOPHONIC = 1,$/;"	e	enum:CHANNELS
+NICE_VALUE	include/boot.h	52;"	d
+NoteChunk	include/wav_parser.h	/^} __PACK NoteChunk;$/;"	t	typeref:struct:__anon10
+NoteID	include/wav_parser.h	112;"	d
+OVER_COUNT	src/animation.c	46;"	d	file:
+POWEROFF_WAV	include/boot.h	42;"	d
+POWEROFF_WAV	include/boot.h	48;"	d
+POWERON_WAV	include/boot.h	41;"	d
+POWERON_WAV	include/boot.h	47;"	d
+PREFIX	include/boot.h	23;"	d
+PlaylistChunk	include/wav_parser.h	/^} __PACK PlaylistChunk;$/;"	t	typeref:struct:__anon7
+PlaylistID	include/wav_parser.h	95;"	d
+RIFFChunk	include/wav_parser.h	/^} __PACK RIFFChunk;$/;"	t	typeref:struct:__anon1
+RIFFID	include/wav_parser.h	29;"	d
+SMPTE	include/wav_parser.h	/^enum SMPTE {$/;"	g
+STATE_PLAY	include/wav_player.h	/^	STATE_PLAY = 0x02,$/;"	e	enum:running_state
+STATE_READY	include/wav_player.h	/^	STATE_READY = 0x01,$/;"	e	enum:running_state
+STATE_UNKNOWN	include/wav_player.h	/^	STATE_UNKNOWN = 0x00,$/;"	e	enum:running_state
+STEREO	include/wav_parser.h	/^	STEREO = 2,$/;"	e	enum:CHANNELS
+SampleLoop	include/wav_parser.h	/^} __PACK SampleLoop;$/;"	t	typeref:struct:__anon12
+SamplerChunk	include/wav_parser.h	/^} __PACK SamplerChunk;$/;"	t	typeref:struct:__anon13
+SamplerID	include/wav_parser.h	130;"	d
+Segment	include/wav_parser.h	/^} __PACK Segment;$/;"	t	typeref:struct:__anon6
+Segments	include/wav_parser.h	/^	Segment Segments[];$/;"	m	struct:__anon7
+TITLE	include/boot.h	54;"	d
+TYPE_CHECK_ANI	include/boot.h	/^	TYPE_CHECK_ANI,$/;"	e	enum:__anon18
+TYPE_CHECK_SOUND	include/boot.h	/^	TYPE_CHECK_SOUND,$/;"	e	enum:__anon18
+TYPE_CLEAR	include/boot.h	/^	TYPE_CLEAR,$/;"	e	enum:__anon17
+TYPE_MAX	include/boot.h	/^	TYPE_MAX$/;"	e	enum:__anon17
+TYPE_OFF	include/boot.h	/^	TYPE_OFF,$/;"	e	enum:__anon17
+TYPE_OFF_NOEXIT	include/boot.h	/^	TYPE_OFF_NOEXIT,$/;"	e	enum:__anon17
+TYPE_OFF_WITH_MSG	include/boot.h	/^	TYPE_OFF_WITH_MSG,$/;"	e	enum:__anon17
+TYPE_ON	include/boot.h	/^	TYPE_ON,$/;"	e	enum:__anon17
+TYPE_UNKNOWN	include/boot.h	/^	TYPE_UNKNOWN,$/;"	e	enum:__anon17
+UnshiftedNote	include/wav_parser.h	/^	unsigned char UnshiftedNote;$/;"	m	struct:__anon14
+WAVEID	include/wav_parser.h	30;"	d
+WEARABLE_EDJ_OFF	include/boot.h	28;"	d
+WEARABLE_EDJ_ON	include/boot.h	29;"	d
+XRGB8888	src/boot.c	55;"	d	file:
+_D	include/log.h	28;"	d
+_E	include/log.h	32;"	d
+__PACK	include/wav_parser.h	22;"	d
+_count_for_xorg_timer_cb	src/animation.c	/^static Eina_Bool _count_for_xorg_timer_cb(void *data)$/;"	f	file:
+_edje_cb	src/animation.c	/^static void _edje_cb(void *d, Evas_Object * obj, const char *e, const char *s)$/;"	f	file:
+_end_cb	src/animation.c	/^static Eina_Bool _end_cb(void *data)$/;"	f	file:
+animation	src/animation.c	/^static struct animation {$/;"	s	file:
+argc	src/boot.c	/^	int argc;$/;"	m	struct:args	file:
+args	src/boot.c	/^struct args {$/;"	s	file:
+argv	src/boot.c	/^	char **argv;$/;"	m	struct:args	file:
+cSampleLoops	include/wav_parser.h	/^	long cSampleLoops;$/;"	m	struct:__anon13
+cbSamplerData	include/wav_parser.h	/^	long cbSamplerData;$/;"	m	struct:__anon13
+check_window_validity	src/animation.c	/^static int check_window_validity(void)$/;"	f	file:
+chunkID	include/wav_parser.h	/^	char chunkID[4];$/;"	m	struct:chunk_header
+chunkSize	include/wav_parser.h	/^	long chunkSize;$/;"	m	struct:chunk_header
+chunk_header	include/wav_parser.h	/^typedef struct chunk_header {$/;"	s
+chunk_header	include/wav_parser.h	/^} chunk_header;$/;"	t	typeref:struct:chunk_header
+create_window	src/animation.c	/^static int create_window(void)$/;"	f	file:
+data	include/wav_parser.h	/^	char data[1];$/;"	m	struct:__anon16
+data	include/wav_player.h	/^	void *data;$/;"	m	struct:player
+data_header	include/wav_parser.h	/^	chunk_header data_header;$/;"	m	struct:wave
+data_off	include/wav_parser.h	/^	off_t data_off;$/;"	m	struct:wave
+dwAvBytesPerSec	include/wav_parser.h	/^	unsigned long dwAvBytesPerSec;	\/* dwSamplesPerSec * wBlockAlign *\/$/;"	m	struct:__anon2
+dwBlockStart	include/wav_parser.h	/^	long dwBlockStart;$/;"	m	struct:__anon4
+dwChunkStart	include/wav_parser.h	/^	long dwChunkStart;$/;"	m	struct:__anon4
+dwCuePoints	include/wav_parser.h	/^	long dwCuePoints;$/;"	m	struct:__anon5
+dwEnd	include/wav_parser.h	/^	long dwEnd;$/;"	m	struct:__anon12
+dwFraction	include/wav_parser.h	/^	long dwFraction;$/;"	m	struct:__anon12
+dwIdentifier	include/wav_parser.h	/^	long dwIdentifier;$/;"	m	struct:__anon10
+dwIdentifier	include/wav_parser.h	/^	long dwIdentifier;$/;"	m	struct:__anon11
+dwIdentifier	include/wav_parser.h	/^	long dwIdentifier;$/;"	m	struct:__anon12
+dwIdentifier	include/wav_parser.h	/^	long dwIdentifier;$/;"	m	struct:__anon4
+dwIdentifier	include/wav_parser.h	/^	long dwIdentifier;$/;"	m	struct:__anon6
+dwIdentifier	include/wav_parser.h	/^	long dwIdentifier;$/;"	m	struct:__anon9
+dwLength	include/wav_parser.h	/^	long dwLength;$/;"	m	struct:__anon6
+dwMIDIPitchFraction	include/wav_parser.h	/^	long dwMIDIPitchFraction;$/;"	m	struct:__anon13
+dwMIDIUnityNote	include/wav_parser.h	/^	long dwMIDIUnityNote;$/;"	m	struct:__anon13
+dwManufacturer	include/wav_parser.h	/^	long dwManufacturer;$/;"	m	struct:__anon13
+dwPlayCount	include/wav_parser.h	/^	long dwPlayCount;$/;"	m	struct:__anon12
+dwPosition	include/wav_parser.h	/^	long dwPosition;$/;"	m	struct:__anon4
+dwProduct	include/wav_parser.h	/^	long dwProduct;$/;"	m	struct:__anon13
+dwPurpose	include/wav_parser.h	/^	long dwPurpose;$/;"	m	struct:__anon11
+dwRepeats	include/wav_parser.h	/^	long dwRepeats;$/;"	m	struct:__anon6
+dwSMPTEFormat	include/wav_parser.h	/^	long dwSMPTEFormat;$/;"	m	struct:__anon13
+dwSMPTEOffset	include/wav_parser.h	/^	long dwSMPTEOffset;$/;"	m	struct:__anon13
+dwSampleLength	include/wav_parser.h	/^	long dwSampleLength;$/;"	m	struct:__anon11
+dwSampleOffset	include/wav_parser.h	/^	long dwSampleOffset;$/;"	m	struct:__anon4
+dwSamplePeriod	include/wav_parser.h	/^	long dwSamplePeriod;$/;"	m	struct:__anon13
+dwSamplesPerSec	include/wav_parser.h	/^	unsigned long dwSamplesPerSec;	\/* 11025, 22050, 44100 Khz ... *\/$/;"	m	struct:__anon2
+dwSegments	include/wav_parser.h	/^	long dwSegments;$/;"	m	struct:__anon7
+dwStart	include/wav_parser.h	/^	long dwStart;$/;"	m	struct:__anon12
+dwText	include/wav_parser.h	/^	char dwText[];$/;"	m	struct:__anon10
+dwText	include/wav_parser.h	/^	char dwText[];$/;"	m	struct:__anon11
+dwText	include/wav_parser.h	/^	char dwText[];$/;"	m	struct:__anon9
+dwType	include/wav_parser.h	/^	long dwType;$/;"	m	struct:__anon12
+ee	src/animation.c	/^	Ecore_Evas *ee;$/;"	m	struct:animation	file:
+evas	src/animation.c	/^	Evas *evas;$/;"	m	struct:animation	file:
+fccChunk	include/wav_parser.h	/^	unsigned long fccChunk;$/;"	m	struct:__anon4
+fd	include/wav_parser.h	/^	int fd;$/;"	m	struct:wave
+filename	include/wav_parser.h	/^	char *filename;$/;"	m	struct:wave
+fini	include/wav_player.h	/^	int (*fini) (struct player * player);$/;"	m	struct:player
+fini_animation	src/animation.c	/^int fini_animation(void)$/;"	f
+fini_layout	src/animation.c	/^static void fini_layout(void)$/;"	f	file:
+fmt_header	include/wav_parser.h	/^	chunk_header fmt_header;$/;"	m	struct:wave
+fmt_off	include/wav_parser.h	/^	off_t fmt_off;$/;"	m	struct:wave
+focus_win	src/animation.c	/^	Ecore_X_Window focus_win;$/;"	m	struct:animation	file:
+get_wav_file	src/boot.c	/^static int get_wav_file(int state, char *wavpath)$/;"	f	file:
+h	src/animation.c	/^	Evas_Coord h;$/;"	m	struct:animation	file:
+init	include/wav_player.h	/^	int (*init) (struct player * player, struct wave * handle);$/;"	m	struct:player
+init_animation	src/animation.c	/^int init_animation(int state, const char *msg)$/;"	f
+init_layout	src/animation.c	/^static int init_layout(const char *msg)$/;"	f	file:
+layout	src/animation.c	/^	Evas_Object *layout;$/;"	m	struct:animation	file:
+layout_file_set	src/animation.c	/^static void layout_file_set(int state)$/;"	f	file:
+list_header	include/wav_parser.h	/^	chunk_header list_header;$/;"	m	struct:wave
+list_off	include/wav_parser.h	/^	off_t list_off;$/;"	m	struct:wave
+main	src/boot.c	/^int main(int argc, char *argv[])$/;"	f
+msg	src/boot.c	/^	char *msg;$/;"	m	struct:args	file:
+play	include/wav_player.h	/^	int (*play) (struct player * player, struct wave * handle);$/;"	m	struct:player
+player	include/wav_player.h	/^struct player {$/;"	s
+points	include/wav_parser.h	/^	CuePoint points[];$/;"	m	struct:__anon5
+print_usages	src/boot.c	/^static void print_usages(char *argv0)$/;"	f	file:
+riff_header	include/wav_parser.h	/^	chunk_header riff_header;$/;"	m	struct:wave
+riff_off	include/wav_parser.h	/^	off_t riff_off;$/;"	m	struct:wave
+root_win	src/animation.c	/^	Ecore_X_Window root_win;$/;"	m	struct:animation	file:
+run_child	src/animation.c	/^static int run_child(const char *argv[])$/;"	f	file:
+running_state	include/wav_player.h	/^enum running_state {$/;"	g
+s_animation	src/animation.c	/^} s_animation = {$/;"	v	typeref:struct:animation	file:
+state	include/wav_player.h	/^	enum running_state state;$/;"	m	struct:player	typeref:enum:player::running_state
+state	src/animation.c	/^	int state;$/;"	m	struct:animation	file:
+t	src/animation.c	/^	int t;$/;"	m	struct:animation	file:
+text	include/wav_parser.h	/^	char text[];$/;"	m	struct:__anon15
+txt	src/animation.c	/^	Evas_Object *txt;$/;"	m	struct:animation	file:
+type	include/wav_parser.h	/^	char type[4];		\/* WAVE *\/$/;"	m	struct:__anon1
+typeID	include/wav_parser.h	/^	char typeID[4];$/;"	m	struct:__anon15
+typeID	include/wav_parser.h	/^	unsigned long typeID;$/;"	m	struct:__anon8
+w	src/animation.c	/^	Evas_Coord w;$/;"	m	struct:animation	file:
+wBitsPerSample	include/wav_parser.h	/^	unsigned short wBitsPerSample;	\/* 16-bit waveform would have 16 *\/$/;"	m	struct:__anon2
+wBlockAlign	include/wav_parser.h	/^	unsigned short wBlockAlign;$/;"	m	struct:__anon2
+wChannels	include/wav_parser.h	/^	unsigned short wChannels;$/;"	m	struct:__anon2
+wCodePage	include/wav_parser.h	/^	short wCodePage;$/;"	m	struct:__anon11
+wCountry	include/wav_parser.h	/^	short wCountry;$/;"	m	struct:__anon11
+wDialect	include/wav_parser.h	/^	short wDialect;$/;"	m	struct:__anon11
+wFormatTag	include/wav_parser.h	/^	short wFormatTag;	\/* other than 1, compressed *\/$/;"	m	struct:__anon2
+wLanguage	include/wav_parser.h	/^	short wLanguage;$/;"	m	struct:__anon11
+wave	include/wav_parser.h	/^struct wave {$/;"	s
+waveformData	include/wav_parser.h	/^	unsigned char waveformData[1];$/;"	m	struct:__anon3
+win	src/animation.c	/^	Evas_Object *win;$/;"	m	struct:animation	file:
+win_del	src/animation.c	/^static void win_del(void *data, Evas_Object * obj, void *event_info)$/;"	f	file:
+xready_cb	src/boot.c	/^static int xready_cb(keynode_t * node, void *user_data)$/;"	f	file:
+xwin	src/animation.c	/^	Ecore_Window xwin;$/;"	m	struct:animation	file:
