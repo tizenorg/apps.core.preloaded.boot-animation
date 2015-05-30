@@ -1,68 +1,65 @@
 /*
-  * Copyright 2012  Samsung Electronics Co., Ltd
-  * 
-  * Licensed under the Flora License, Version 1.1 (the License);
-  * you may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at
-  * 
-  *     http://floralicense.org/license/
-  * 
-  * Unless required by applicable law or agreed to in writing, software
-  * distributed under the License is distributed on an AS IS BASIS,
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  */
+ *  boot-animation
+ *
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
+ *
+ * Contact: Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
 
-
- normal:"HD/power_off_720_1280/power_off_720_1280__00049.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00000.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00001.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00002.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00003.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00004.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00005.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00006.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00007.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00008.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00009.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00010.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00011.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00012.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00013.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00014.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00015.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00016.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00017.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00018.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00019.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00020.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00021.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00022.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00023.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00024.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00025.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00026.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00027.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00028.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00029.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00030.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00031.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00032.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00033.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00034.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00035.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00036.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00037.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00038.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00039.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00040.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00041.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00042.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00043.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00044.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00045.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00046.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00047.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00048.png";
- tween:"HD/power_off_720_1280/power_off_720_1280__00049.png";
+ normal:"480X800_Power_off/Tizen_power_off_43.png";
+ tween:"480X800_Power_off/Tizen_power_off_01.png";
+ tween:"480X800_Power_off/Tizen_power_off_02.png";
+ tween:"480X800_Power_off/Tizen_power_off_03.png";
+ tween:"480X800_Power_off/Tizen_power_off_04.png";
+ tween:"480X800_Power_off/Tizen_power_off_05.png";
+ tween:"480X800_Power_off/Tizen_power_off_06.png";
+ tween:"480X800_Power_off/Tizen_power_off_07.png";
+ tween:"480X800_Power_off/Tizen_power_off_08.png";
+ tween:"480X800_Power_off/Tizen_power_off_09.png";
+ tween:"480X800_Power_off/Tizen_power_off_10.png";
+ tween:"480X800_Power_off/Tizen_power_off_11.png";
+ tween:"480X800_Power_off/Tizen_power_off_12.png";
+ tween:"480X800_Power_off/Tizen_power_off_13.png";
+ tween:"480X800_Power_off/Tizen_power_off_14.png";
+ tween:"480X800_Power_off/Tizen_power_off_15.png";
+ tween:"480X800_Power_off/Tizen_power_off_16.png";
+ tween:"480X800_Power_off/Tizen_power_off_17.png";
+ tween:"480X800_Power_off/Tizen_power_off_18.png";
+ tween:"480X800_Power_off/Tizen_power_off_19.png";
+ tween:"480X800_Power_off/Tizen_power_off_20.png";
+ tween:"480X800_Power_off/Tizen_power_off_21.png";
+ tween:"480X800_Power_off/Tizen_power_off_22.png";
+ tween:"480X800_Power_off/Tizen_power_off_23.png";
+ tween:"480X800_Power_off/Tizen_power_off_24.png";
+ tween:"480X800_Power_off/Tizen_power_off_25.png";
+ tween:"480X800_Power_off/Tizen_power_off_26.png";
+ tween:"480X800_Power_off/Tizen_power_off_27.png";
+ tween:"480X800_Power_off/Tizen_power_off_28.png";
+ tween:"480X800_Power_off/Tizen_power_off_29.png";
+ tween:"480X800_Power_off/Tizen_power_off_30.png";
+ tween:"480X800_Power_off/Tizen_power_off_31.png";
+ tween:"480X800_Power_off/Tizen_power_off_32.png";
+ tween:"480X800_Power_off/Tizen_power_off_33.png";
+ tween:"480X800_Power_off/Tizen_power_off_34.png";
+ tween:"480X800_Power_off/Tizen_power_off_35.png";
+ tween:"480X800_Power_off/Tizen_power_off_36.png";
+ tween:"480X800_Power_off/Tizen_power_off_37.png";
+ tween:"480X800_Power_off/Tizen_power_off_38.png";
+ tween:"480X800_Power_off/Tizen_power_off_39.png";
+ tween:"480X800_Power_off/Tizen_power_off_40.png";
+ tween:"480X800_Power_off/Tizen_power_off_41.png";
+ tween:"480X800_Power_off/Tizen_power_off_42.png";
+ tween:"480X800_Power_off/Tizen_power_off_43.png";
