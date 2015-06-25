@@ -1,0 +1,5 @@
+[Unit]
+Description=This path will tell you that boot-animation is ready to launch
+
+[Path]
+PathExists=/run/.wm_ready
