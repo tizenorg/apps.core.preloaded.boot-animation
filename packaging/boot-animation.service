@@ -6,17 +6,19 @@ ConditionPathExists=!/tmp/restart
 ConditionKernelCommandLine=|!bootmode=silent
 
 [Service]
-Environment=ECORE_EVAS_ENGINE=wayland_egl
-Environment=ECORE_IMF_INPUT_PANEL_ENABLED=1
-Environment=ECORE_IMF_MODULE=isf
-Environment=EFL_WAYLAND_USE_XDG_SHELL=defined
-Environment=ELM_ACCEL=gl
-Environment=ELM_DISPLAY=wl
-Environment=ELM_ENGINE=wayland_egl
-Environment=ELM_PROFILE=mobile
-Environment=ELM_SCALE=4.0
-Environment=WAYLAND_DISPLAY=wayland-0
-Environment=XDG_RUNTIME_DIR=/tmp
+#EnvironmentFile=ECORE_EVAS_ENGINE=wayland_egl
+#EnvironmentFile=ECORE_IMF_INPUT_PANEL_ENABLED=1
+#EnvironmentFile=ECORE_IMF_MODULE=isf
+#EnvironmentFile=EFL_WAYLAND_USE_XDG_SHELL=defined
+#EnvironmentFile=ELM_ACCEL=gl
+#EnvironmentFile=ELM_DISPLAY=wl
+#EnvironmentFile=ELM_ENGINE=wayland_egl
+#EnvironmentFile=ELM_PROFILE=mobile
+#EnvironmentFile=ELM_SCALE=4.0
+#EnvironmentFile=WAYLAND_DISPLAY=wayland-0
+#EnvironmentFile=XDG_RUNTIME_DIR=/tmp
+EnvironmentFile=/run/tizen-system-env
+
 Type=oneshot
 Nice=-20
 ExecStart=/usr/bin/boot-animation --start
