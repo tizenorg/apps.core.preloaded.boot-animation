@@ -20,6 +20,7 @@ Source1: boot-animation.service
 Source2: shutdown-animation.service
 Source3: silent-animation.service
 Source4: late-tizen-system.service
+Source5: boot-animation.path
 License: Apache
 Group: Samsung/Application
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
@@ -62,16 +63,29 @@ mkdir -p %{buildroot}/usr/share/license
 cp -f LICENSE %{buildroot}/usr/share/license/%{name}
 %make_install
 
-mkdir -p %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants
-install -m 0644 %SOURCE1 %{buildroot}%{_libdir}/systemd/system/boot-animation.service
-ln -s ../boot-animation.service %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants/
+#mkdir -p %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants
+#install -m 0644 %SOURCE1 %{buildroot}%{_libdir}/systemd/system/boot-animation.service
+#ln -s ../boot-animation.service %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants/
 #mkdir -p %{buildroot}%{_libdir}/systemd/system/shutdown.target.wants
-install -m 0644 %SOURCE2 %{buildroot}%{_libdir}/systemd/system/shutdown-animation.service
+#install -m 0644 %SOURCE2 %{buildroot}%{_libdir}/systemd/system/shutdown-animation.service
 #ln -s ../shutdown-animation.service %{buildroot}%{_libdir}/systemd/system/shutdown.target.wants/
-install -m 0644 %SOURCE3 %{buildroot}%{_libdir}/systemd/system/silent-animation.service
-ln -s ../silent-animation.service %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants/
-install -m 0644 %SOURCE4 %{buildroot}%{_libdir}/systemd/system/late-tizen-system.service
-ln -s ../late-tizen-system.service %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants/
+#install -m 0644 %SOURCE3 %{buildroot}%{_libdir}/systemd/system/silent-animation.service
+#ln -s ../silent-animation.service %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants/
+#install -m 0644 %SOURCE4 %{buildroot}%{_libdir}/systemd/system/late-tizen-system.service
+#ln -s ../late-tizen-system.service %{buildroot}%{_libdir}/systemd/system/tizen-system.target.wants/
+
+mkdir -p %{buildroot}/usr/lib/systemd/system/multi-user.target.wants
+install -m 0644 %SOURCE1 %{buildroot}/usr/lib/systemd/system/boot-animation.service
+ln -s ../boot-animation.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/
+#mkdir -p %{buildroot}%{_libdir}/systemd/system/shutdown.target.wants
+install -m 0644 %SOURCE2 %{buildroot}/usr/lib/systemd/system/shutdown-animation.service
+#ln -s ../shutdown-animation.service %{buildroot}%{_libdir}/systemd/system/shutdown.target.wants/
+install -m 0644 %SOURCE3 %{buildroot}/usr/lib/systemd/system/silent-animation.service
+ln -s ../silent-animation.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/
+install -m 0644 %SOURCE4 %{buildroot}/usr/lib/systemd/system/late-tizen-system.service
+ln -s ../late-tizen-system.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/
+install -m 0644 %SOURCE5 %{buildroot}/usr/lib/systemd/system/boot-animation.path
+ln -s ../boot-animation.path %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/
 
 %clean
 make clean
@@ -102,11 +116,19 @@ make clean
 %endif
 /usr/share/license/%{name}
 %{_bindir}/boot-animation
-%{_libdir}/systemd/system/boot-animation.service
-%{_libdir}/systemd/system/tizen-system.target.wants/boot-animation.service
-%{_libdir}/systemd/system/shutdown-animation.service
-%{_libdir}/systemd/system/silent-animation.service
-%{_libdir}/systemd/system/tizen-system.target.wants/silent-animation.service
-#%{_libdir}/systemd/system/shutdown.target.wants/shutdown-animation.service
-%{_libdir}/systemd/system/late-tizen-system.service
-%{_libdir}/systemd/system/tizen-system.target.wants/late-tizen-system.service
+#%{_libdir}/systemd/system/boot-animation.service
+#%{_libdir}/systemd/system/tizen-system.target.wants/boot-animation.service
+#%{_libdir}/systemd/system/shutdown-animation.service
+#%{_libdir}/systemd/system/silent-animation.service
+#%{_libdir}/systemd/system/tizen-system.target.wants/silent-animation.service
+#%{_libdir}/systemd/system/late-tizen-system.service
+#%{_libdir}/systemd/system/tizen-system.target.wants/late-tizen-system.service
+/usr/lib/systemd/system/boot-animation.service
+/usr/lib/systemd/system/multi-user.target.wants/boot-animation.service
+/usr/lib/systemd/system/shutdown-animation.service
+/usr/lib/systemd/system/silent-animation.service
+/usr/lib/systemd/system/multi-user.target.wants/silent-animation.service
+/usr/lib/systemd/system/late-tizen-system.service
+/usr/lib/systemd/system/multi-user.target.wants/late-tizen-system.service
+/usr/lib/systemd/system/boot-animation.path
+/usr/lib/systemd/system/multi-user.target.wants/boot-animation.path
