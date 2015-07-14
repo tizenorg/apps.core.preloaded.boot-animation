@@ -89,6 +89,7 @@ static int xready_cb(keynode_t * node, void *user_data)
 	int argc;
 	char **argv;
 	int type = TYPE_UNKNOWN;
+	int clear_type = TYPE_UNKNOWN;
 	int soundon = 1;	/* default sound on */
 	struct args *args = user_data;
 	char wav_path[256];
@@ -103,9 +104,11 @@ static int xready_cb(keynode_t * node, void *user_data)
 	static int invoked_flag = 0;
 
 	_D("xready_cb");
+	printf("xready_cb\n");
 
 	if (invoked_flag == 1) {
 		_E("Already launched");
+		printf("Error Already launched\n");
 		return EXIT_FAILURE;
 	}
 
@@ -114,6 +117,11 @@ static int xready_cb(keynode_t * node, void *user_data)
 	argc = args->argc;
 	argv = args->argv;
 
+	int i;
+	for (i = 0; i < argc; i++) {
+	    _D("argc %d [%s]", i, argv[i]);
+	    printf("argc %d [%s]\n", i, argv[i]);
+	}
 	while ((c = getopt_long(argc, argv, "spom:c", long_options, NULL)) >= 0) {
 
 		switch (c) {
@@ -133,9 +141,13 @@ static int xready_cb(keynode_t * node, void *user_data)
 			if (!args->msg)
 				perror("strdup");
 			continue;
+		case 'c':
+			clear_type = TYPE_CLEAR;
+			continue;
 		default:
 			type = TYPE_UNKNOWN;
 			_D("[Boot-ani] unknown arg [%s]", optarg);
+			printf("[Boot-anim] unknown arg [%s]\n", optarg);
 			return EXIT_FAILURE;
 		}
 	}
@@ -143,17 +155,24 @@ static int xready_cb(keynode_t * node, void *user_data)
 	/* check sound profile */
 	if (vconf_get_bool(VCONFKEY_SETAPPL_SOUND_STATUS_BOOL, &soundon) < 0) {
 		_D("VCONFKEY_SETAPPL_SOUND_STATUS_BOOL ==> FAIL!!");
+		printf("VCONFKEY_SETAPPL_SOUND_STATUS_BOOL ==> FAIL!!\n");
 	}
 
 	_D("Sound status: %d", soundon);
+	printf("Sound status: %d\n", soundon);
 
 	if (init_animation(type, args->msg) != EXIT_SUCCESS) {
 		_D("Exit boot-animation");
+		printf("Exit boot-animation\n");
 		return EXIT_FAILURE;
 	}
 
 	if (soundon) {
+		_D("Sound on!!");
+		printf("Sound on!!\n");
 		if (!get_wav_file(type, wav_path)) {
+			_D("File path: %s", wav_path);
+			printf("File path: %s\n", wav_path);
 			mm_sound_boot_ready(3);
 			mm_sound_boot_play_sound(wav_path);
 		}
@@ -195,6 +214,7 @@ static void _boot_ani_ui_set_scale(void)
 //int elm_main(int argc, char *argv[])
 int main(int argc, char *argv[])
 {
+	int fd = 0;
 	struct args args;
 	setenv("HOME", "/home/root", 1);
 
@@ -211,10 +231,16 @@ int main(int argc, char *argv[])
 	_boot_ani_ui_set_scale();
 #endif
 
+	close(1);
+	fd = open("/tmp/myfile.txt", O_CREAT|O_RDWR, S_IRWXU|S_IRWXO);
+	_D("result of open: %d", fd);
+	printf("[%s/%s/%d] fd == %d\n", __FILE__, __func__, __LINE__, fd);
+
 	elm_init(argc, argv);
 
 	if (vconf_set_int(VCONFKEY_BOOT_ANIMATION_FINISHED, 0) != 0) {
 		_D("Failed to set finished value to 0\n");
+		printf("[%s/%s/%d] Failed to set finished value to 0\n", __FILE__, __func__, __LINE__);
 	}
 	if (xready_cb(NULL, &args) != EXIT_SUCCESS) {
 		vconf_set_int(VCONFKEY_BOOT_ANIMATION_FINISHED, 1);

@@ -1,9 +1,9 @@
 [Unit]
 Description=Boot Animation
-After=wm_ready.service sound-server.service pulseaudio.service sound-init.service system-server.service
-Before=tizen-system.target
-ConditionPathExists=!/tmp/restart
-ConditionKernelCommandLine=|!bootmode=silent
+#After=wm_ready.service sound-server.service pulseaudio.service sound-init.service system-server.service
+#Before=tizen-system.target
+#ConditionPathExists=!/tmp/restart
+#ConditionKernelCommandLine=|!bootmode=silent
 
 [Service]
 EnvironmentFile=/run/tizen-system-env

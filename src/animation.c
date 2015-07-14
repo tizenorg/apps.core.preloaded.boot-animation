@@ -101,27 +101,25 @@ static int run_child(const char *argv[])
 static int check_window_validity(void)
 {
 	_D("Check window validity");
+	printf("Check window validity\n");
 	DIR *dp;
 	struct dirent *dentry;
 	int ret = -1;
 	dp = opendir(CHECK_LCD);
-	_D("Check window validity");
 	if (!dp) {
 		_E("Failed to get lcd node");
+		printf("Failed to get lcd node\n");
 		return -1;
 	}
 	while ((dentry = readdir(dp)) != NULL) {
-	_D("Check window validity");
 		if ((!strcmp(dentry->d_name, ".")) || (!strcmp(dentry->d_name, ".."))) {
 			continue;
 		}
 		else {
-	_D("Check window validity");
 			ret = 0;
 			break;
 		}
 	}
-	_D("Check window validity");
 	closedir(dp);
 	return ret;
 }
@@ -267,12 +265,15 @@ static void fini_layout(void)
 static int create_window(void)
 {
 	_D("Create Window");
+	printf("Create Window\n");
 
 	int x, y = 0;
 
-	s_animation.win = elm_win_add(NULL, "", ELM_WIN_NOTIFICATION);
+	s_animation.win = elm_win_add(NULL, "BOOT_ANIMATION", ELM_WIN_NOTIFICATION);
+	elm_win_role_set(s_animation.win, "alert");
 	if (!s_animation.win) {
 		_E("Failed to create a new window");
+		printf("Failed to create a new window\n");
 		return EXIT_FAILURE;
 	}
 	if (s_animation.state == TYPE_OFF || s_animation.state == TYPE_OFF_WITH_MSG) {
@@ -351,11 +352,13 @@ static Eina_Bool _count_for_xorg_timer_cb(void *data)
 int init_animation(int state, const char *msg)
 {
 	_D("Init animation");
+	printf("Init animation\n");
 
 	Ecore_Timer *timer = NULL;
 
 	//if (check_window_validity()) {
 	//	_E("Failed to access LCD");
+	//	printf("Failed to access LCD\n");
 	//	return EXIT_FAILURE;
 	//}
 
@@ -363,6 +366,7 @@ int init_animation(int state, const char *msg)
 
 	if (create_window() == EXIT_FAILURE) {
 		_E("Failed to create a new window");
+		printf("Failed to create a new window\n");
 		return EXIT_FAILURE;
 	}
 
@@ -380,5 +384,7 @@ int fini_animation(void)
 {
 	fini_layout();
 	evas_object_del(s_animation.win);
+	fflush(stdout);
+	close(1);
 	return EXIT_SUCCESS;
 }

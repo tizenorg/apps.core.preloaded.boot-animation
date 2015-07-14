@@ -63,7 +63,6 @@ cp -f LICENSE %{buildroot}/usr/share/license/%{name}
 
 mkdir -p %{buildroot}/usr/lib/systemd/system/multi-user.target.wants
 install -m 0644 %SOURCE1 %{buildroot}/usr/lib/systemd/system/boot-animation.service
-ln -s ../boot-animation.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/
 install -m 0644 %SOURCE2 %{buildroot}/usr/lib/systemd/system/shutdown-animation.service
 install -m 0644 %SOURCE3 %{buildroot}/usr/lib/systemd/system/silent-animation.service
 ln -s ../silent-animation.service %{buildroot}/usr/lib/systemd/system/multi-user.target.wants/
@@ -98,7 +97,6 @@ make clean
 /usr/share/license/%{name}
 %{_bindir}/boot-animation
 /usr/lib/systemd/system/boot-animation.service
-/usr/lib/systemd/system/multi-user.target.wants/boot-animation.service
 /usr/lib/systemd/system/shutdown-animation.service
 /usr/lib/systemd/system/silent-animation.service
 /usr/lib/systemd/system/multi-user.target.wants/silent-animation.service
