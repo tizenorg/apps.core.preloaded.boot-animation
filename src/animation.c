@@ -98,32 +98,6 @@ static int run_child(const char *argv[])
 	return r;
 }
 
-static int check_window_validity(void)
-{
-	_D("Check window validity");
-	printf("Check window validity\n");
-	DIR *dp;
-	struct dirent *dentry;
-	int ret = -1;
-	dp = opendir(CHECK_LCD);
-	if (!dp) {
-		_E("Failed to get lcd node");
-		printf("Failed to get lcd node\n");
-		return -1;
-	}
-	while ((dentry = readdir(dp)) != NULL) {
-		if ((!strcmp(dentry->d_name, ".")) || (!strcmp(dentry->d_name, ".."))) {
-			continue;
-		}
-		else {
-			ret = 0;
-			break;
-		}
-	}
-	closedir(dp);
-	return ret;
-}
-
 static void win_del(void *data, Evas_Object * obj, void *event_info)
 {
 	_D("Window delete event received");
@@ -315,52 +289,12 @@ static int create_window(void)
 	return EXIT_SUCCESS;
 }
 
-static Eina_Bool _count_for_xorg_timer_cb(void *data)
-{
-	int ret = 0;
-	static int count = 0;
-
-	ret = access(CHECK_Xorg, F_OK);
-	if (ret == 0) {
-		if (init_layout(data) == EXIT_FAILURE) {
-			_E("Failed to init the layout object");
-			if (data) {
-				evas_object_del(s_animation.txt);
-			}
-			evas_object_del(s_animation.win);
-		}
-		count = 0;
-		return ECORE_CALLBACK_CANCEL;
-	}
-	if (count > OVER_COUNT) {
-		_E("Getting Xorg is delaying, Something is wrong");
-		if (init_layout(data) == EXIT_FAILURE) {
-			_E("Failed to init the layout object");
-			if (data) {
-				evas_object_del(s_animation.txt);
-			}
-			evas_object_del(s_animation.win);
-		}
-		count = 0;
-		return ECORE_CALLBACK_CANCEL;
-	}
-	count ++;
-
-	return ECORE_CALLBACK_RENEW;
-}
-
 int init_animation(int state, const char *msg)
 {
 	_D("Init animation");
 	printf("Init animation\n");
 
 	Ecore_Timer *timer = NULL;
-
-	//if (check_window_validity()) {
-	//	_E("Failed to access LCD");
-	//	printf("Failed to access LCD\n");
-	//	return EXIT_FAILURE;
-	//}
 
 	s_animation.state = state;
 
@@ -370,11 +304,12 @@ int init_animation(int state, const char *msg)
 		return EXIT_FAILURE;
 	}
 
-	/* waiting initialzing Xorg process during 2 seconds */
-	timer = ecore_timer_add(0.1f, _count_for_xorg_timer_cb, msg);
-	if (!timer) {
-		_E("Critical Error");
-		return EXIT_FAILURE;
+	if (init_layout(msg) == EXIT_FAILURE) {
+		_E("Failed to init the layout object");
+		if (msg) {
+			evas_object_del(s_animation.txt);
+		}
+		evas_object_del(s_animation.win);
 	}
 
 	return EXIT_SUCCESS;
