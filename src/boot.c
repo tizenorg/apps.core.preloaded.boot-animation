@@ -211,7 +211,6 @@ static void _boot_ani_ui_set_scale(void)
 }
 #endif
 
-//int elm_main(int argc, char *argv[])
 int main(int argc, char *argv[])
 {
 	int fd = 0;
