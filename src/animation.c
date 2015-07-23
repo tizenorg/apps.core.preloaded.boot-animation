@@ -67,7 +67,6 @@ static Eina_Bool _end_cb(void *data)
 	printf("_end_cb is invoked\n");
 	if (vconf_set_int(VCONFKEY_BOOT_ANIMATION_FINISHED, 1) != 0)
 		_E("Failed to set finished set");
-	if (s_animation.state == TYPE_OFF || s_animation.state == TYPE_OFF_WITH_MSG)
 	elm_exit();
 	return ECORE_CALLBACK_CANCEL;
 }
