@@ -36,7 +36,6 @@
 #include <pthread.h>
 
 #include <Elementary.h>
-#include <audio-session-manager.h>
 
 #include <getopt.h>
 #include <mm_sound_private.h>
