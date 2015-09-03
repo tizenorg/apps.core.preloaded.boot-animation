@@ -7,6 +7,7 @@ ConditionKernelCommandLine=|!bootmode=silent
 
 [Service]
 EnvironmentFile=/run/tizen-system-env
+EnvironmentFile=/run/xdg-root-env
 
 Type=oneshot
 Nice=-20
