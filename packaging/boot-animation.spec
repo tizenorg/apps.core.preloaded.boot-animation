@@ -21,7 +21,7 @@ Source2: shutdown-animation.service
 Source3: silent-animation.service
 Source4: late-tizen-system.service
 Source5: boot-animation.path
-License: Apache
+License: Apache-2.0
 Group: Samsung/Application
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildRequires: cmake
@@ -81,12 +81,12 @@ make clean
 
 %files
 %manifest boot-animation.manifest
-/usr/share/edje/poweroff.edj
-/usr/share/edje/poweron.edj
-/usr/share/edje/mobile_poweroff.edj
-/usr/share/edje/mobile_poweron.edj
-/usr/share/edje/wearable_poweroff.edj
-/usr/share/edje/wearable_poweron.edj
+/usr/share/edje/360x480_PowerOn.edj
+/usr/share/edje/360x480_PowerOff.edj
+/usr/share/edje/480x800_PowerOn.edj
+/usr/share/edje/480x800_PowerOff.edj
+/usr/share/edje/720x1280_PowerOn.edj
+/usr/share/edje/720x1280_PowerOff.edj
 %if %{?ARCH} == arm
 /usr/share/keysound/poweron.ogg
 %else

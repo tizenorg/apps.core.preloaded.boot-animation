@@ -47,110 +47,63 @@ ADD_DEFINITIONS("-DPREFIX=\"${CMAKE_INSTALL_PREFIX}\"")
 ADD_EXECUTABLE(${PROJECT_NAME} ${SRCS})
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${pkgs_LDFLAGS})
 
-IF("${TIZEN_PROFILE_NAME}" STREQUAL "mobile")
-ADD_CUSTOM_COMMAND(OUTPUT poweroff.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/poweroff.edc ${CMAKE_BINARY_DIR}/poweroff.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/poweroff.edc
-			${CMAKE_SOURCE_DIR}/data/poweroff_image.h
-			${CMAKE_SOURCE_DIR}/data/poweroff_part.h
+#IF("${TIZEN_PROFILE_NAME}" STREQUAL "mobile")
+ADD_CUSTOM_COMMAND(OUTPUT 360x480_PowerOn.edj
+		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image/
+			${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOn.edc ${CMAKE_BINARY_DIR}/360x480_PowerOn.edj
+		DEPENDS ${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOn.edc
+			${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOn_image.h
+			${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOn_part.h
 )
-ADD_CUSTOM_COMMAND(OUTPUT poweron.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/poweron.edc ${CMAKE_BINARY_DIR}/poweron.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/poweron.edc
-			${CMAKE_SOURCE_DIR}/data/poweron_image.h
-			${CMAKE_SOURCE_DIR}/data/poweron_part.h
+ADD_CUSTOM_COMMAND(OUTPUT 360x480_PowerOff.edj
+		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image/
+			${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOff.edc ${CMAKE_BINARY_DIR}/360x480_PowerOff.edj
+		DEPENDS ${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOff.edc
+			${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOff_image.h
+			${CMAKE_SOURCE_DIR}/data/edje/360x480/360x480_PowerOff_part.h
 )
-ADD_CUSTOM_COMMAND(OUTPUT mobile_poweroff.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/mobile_poweroff.edc ${CMAKE_BINARY_DIR}/mobile_poweroff.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/mobile_poweroff.edc
-			${CMAKE_SOURCE_DIR}/data/mobile_poweroff_image.h
-			${CMAKE_SOURCE_DIR}/data/mobile_poweroff_part.h
+ADD_CUSTOM_COMMAND(OUTPUT 480x800_PowerOn.edj
+		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image/
+			${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOn.edc ${CMAKE_BINARY_DIR}/480x800_PowerOn.edj
+		DEPENDS ${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOn.edc
+			${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOn_image.h
+			${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOn_part.h
 )
-ADD_CUSTOM_COMMAND(OUTPUT mobile_poweron.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/mobile_poweron.edc ${CMAKE_BINARY_DIR}/mobile_poweron.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/mobile_poweron.edc
-			${CMAKE_SOURCE_DIR}/data/mobile_poweron_image.h
-			${CMAKE_SOURCE_DIR}/data/mobile_poweron_part.h
+ADD_CUSTOM_COMMAND(OUTPUT 480x800_PowerOff.edj
+		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image/
+			${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOff.edc ${CMAKE_BINARY_DIR}/480x800_PowerOff.edj
+		DEPENDS ${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOff.edc
+			${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOff_image.h
+			${CMAKE_SOURCE_DIR}/data/edje/480x800/480x800_PowerOff_part.h
 )
-ADD_CUSTOM_COMMAND(OUTPUT wearable_poweroff.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/wearable_poweroff.edc ${CMAKE_BINARY_DIR}/wearable_poweroff.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/wearable_poweroff.edc
-			${CMAKE_SOURCE_DIR}/data/wearable_poweroff_image.h
-			${CMAKE_SOURCE_DIR}/data/wearable_poweroff_part.h
+ADD_CUSTOM_COMMAND(OUTPUT 720x1280_PowerOn.edj
+		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image/
+			${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOn.edc ${CMAKE_BINARY_DIR}/720x1280_PowerOn.edj
+		DEPENDS ${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOn.edc
+			${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOn_image.h
+			${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOn_part.h
 )
-ADD_CUSTOM_COMMAND(OUTPUT wearable_poweron.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/wearable_poweron.edc ${CMAKE_BINARY_DIR}/wearable_poweron.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/wearable_poweron.edc
-			${CMAKE_SOURCE_DIR}/data/wearable_poweron_image.h
-			${CMAKE_SOURCE_DIR}/data/wearable_poweron_part.h
+ADD_CUSTOM_COMMAND(OUTPUT 720x1280_PowerOff.edj
+		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image/
+			${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOff.edc ${CMAKE_BINARY_DIR}/720x1280_PowerOff.edj
+		DEPENDS ${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOff.edc
+			${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOff_image.h
+			${CMAKE_SOURCE_DIR}/data/edje/720x1280/720x1280_PowerOff_part.h
 )
-ELSE()
-ADD_CUSTOM_COMMAND(OUTPUT poweroff.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/poweroff.edc ${CMAKE_BINARY_DIR}/poweroff.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/poweroff.edc
-			${CMAKE_SOURCE_DIR}/data/poweroff_image.h
-			${CMAKE_SOURCE_DIR}/data/poweroff_part.h
-)
-ADD_CUSTOM_COMMAND(OUTPUT poweron.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/poweron.edc ${CMAKE_BINARY_DIR}/poweron.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/poweron.edc
-			${CMAKE_SOURCE_DIR}/data/poweron_image.h
-			${CMAKE_SOURCE_DIR}/data/poweron_part.h
-)
-ADD_CUSTOM_COMMAND(OUTPUT mobile_poweroff.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/mobile_poweroff.edc ${CMAKE_BINARY_DIR}/mobile_poweroff.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/mobile_poweroff.edc
-			${CMAKE_SOURCE_DIR}/data/mobile_poweroff_image.h
-			${CMAKE_SOURCE_DIR}/data/mobile_poweroff_part.h
-)
-ADD_CUSTOM_COMMAND(OUTPUT mobile_poweron.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/mobile_poweron.edc ${CMAKE_BINARY_DIR}/mobile_poweron.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/mobile_poweron.edc
-			${CMAKE_SOURCE_DIR}/data/mobile_poweron_image.h
-			${CMAKE_SOURCE_DIR}/data/mobile_poweron_part.h
-)
-ADD_CUSTOM_COMMAND(OUTPUT wearable_poweroff.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/wearable_poweroff.edc ${CMAKE_BINARY_DIR}/wearable_poweroff.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/wearable_poweroff.edc
-			${CMAKE_SOURCE_DIR}/data/wearable_poweroff_image.h
-			${CMAKE_SOURCE_DIR}/data/wearable_poweroff_part.h
-)
-ADD_CUSTOM_COMMAND(OUTPUT wearable_poweron.edj
-		COMMAND edje_cc -id ${CMAKE_SOURCE_DIR}/data/image
-			${CMAKE_SOURCE_DIR}/data/wearable_poweron.edc ${CMAKE_BINARY_DIR}/wearable_poweron.edj
-		DEPENDS ${CMAKE_SOURCE_DIR}/data/wearable_poweron.edc
-			${CMAKE_SOURCE_DIR}/data/wearable_poweron_image.h
-			${CMAKE_SOURCE_DIR}/data/wearable_poweron_part.h
-)
-ENDIF()
-ADD_CUSTOM_TARGET(edj_build DEPENDS poweron.edj poweroff.edj mobile_poweron.edj mobile_poweroff.edj wearable_poweron.edj wearable_poweroff.edj)
+ADD_CUSTOM_TARGET(edj_build DEPENDS 360x480_PowerOn.edj 360x480_PowerOff.edj 480x800_PowerOn.edj 480x800_PowerOff.edj 720x1280_PowerOn.edj 720x1280_PowerOff.edj)
 ADD_DEPENDENCIES(${PROJECT_NAME} edj_build)
 
 INSTALL(TARGETS ${PROJECT_NAME} DESTINATION bin)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/poweron.edj DESTINATION share/edje)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/poweroff.edj DESTINATION share/edje)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/mobile_poweron.edj DESTINATION share/edje)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/mobile_poweroff.edj DESTINATION share/edje)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/wearable_poweron.edj DESTINATION share/edje)
-INSTALL(FILES ${CMAKE_BINARY_DIR}/wearable_poweroff.edj DESTINATION share/edje)
+
+INSTALL(FILES ${CMAKE_BINARY_DIR}/360x480_PowerOn.edj DESTINATION share/edje)
+INSTALL(FILES ${CMAKE_BINARY_DIR}/360x480_PowerOff.edj DESTINATION share/edje)
+INSTALL(FILES ${CMAKE_BINARY_DIR}/480x800_PowerOn.edj DESTINATION share/edje)
+INSTALL(FILES ${CMAKE_BINARY_DIR}/480x800_PowerOff.edj DESTINATION share/edje)
+INSTALL(FILES ${CMAKE_BINARY_DIR}/720x1280_PowerOn.edj DESTINATION share/edje)
+INSTALL(FILES ${CMAKE_BINARY_DIR}/720x1280_PowerOff.edj DESTINATION share/edje)
 IF("${ARCH}" STREQUAL "emulator")
 ADD_DEFINITIONS("-DEMULATOR_TYPE")
 INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/sound/SDK_poweron/poweron.wav DESTINATION share/keysound)
-#INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/image/emul/1X1_poweron.edj DESTINATION share/edje/emul)
-#INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/image/emul/1X1_poweroff.edj DESTINATION share/edje/emul)
-#INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/image/emul/3X4_poweron.edj DESTINATION share/edje/emul)
-#INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/image/emul/3X4_poweroff.edj DESTINATION share/edje/emul)
 ELSEIF("${ARCH}" STREQUAL "arm")
 ADD_DEFINITIONS("-DARM_TYPE")
 IF("${USE_MICRO_ANI}" STREQUAL "ON")

@@ -1,9 +1,5 @@
 /*
- *  boot-animation
- *
- * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
- *
- * Contact: Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd All Rights Reserved
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -114,30 +110,40 @@ static void layout_file_set(int state)
 	_D("Layout file set according to resolution");
 	_D("Screen Width: %d, DEFAULT_WIDTH: %d", s_animation.w, DEFAULT_W);
 
-	if (s_animation.w < DEFAULT_W) {
-		if (state == TYPE_ON) {
-			_D("Set file: %s", WEARABLE_EDJ_ON);
-			elm_layout_file_set(s_animation.layout, WEARABLE_EDJ_ON, GRP_ON);
-		} else {
-			_D("Set file: %s", WEARABLE_EDJ_OFF);
-			elm_layout_file_set(s_animation.layout, WEARABLE_EDJ_OFF, GRP_OFF);
-		}
-	} else if (s_animation.w > DEFAULT_W) {
-		if (state == TYPE_ON) {
-			_D("Set file: %s", MOBILE_EDJ_ON);
-			elm_layout_file_set(s_animation.layout, MOBILE_EDJ_ON, GRP_ON);
-		} else {
-			_D("Set file: %s", MOBILE_EDJ_OFF);
-			elm_layout_file_set(s_animation.layout, MOBILE_EDJ_OFF, GRP_OFF);
-		}
-	} else {
-		if (state == TYPE_ON) {
-			_D("Set file: %s", DEFAULT_EDJ_ON);
-			elm_layout_file_set(s_animation.layout, DEFAULT_EDJ_ON, GRP_ON);
-		} else {
-			_D("Set file: %s", DEFAULT_EDJ_OFF);
-			elm_layout_file_set(s_animation.layout, DEFAULT_EDJ_OFF, GRP_OFF);
-		}
+	switch(s_animation.w)
+	{
+		case 360:
+			_D("Resolution is %dx%d", s_animation.w, s_animation.h);
+			if (state == TYPE_ON) {
+				elm_layout_file_set(s_animation.layout, WEARABLE_POWER_ON, GRP_ON);
+			} else {
+				elm_layout_file_set(s_animation.layout, WEARABLE_POWER_OFF, GRP_OFF);
+			}
+			break;
+		case 480:
+			_D("Resolution is %dx%d", s_animation.w, s_animation.h);
+			if (state == TYPE_ON) {
+				elm_layout_file_set(s_animation.layout, WVGA_POWER_ON, GRP_ON);
+			} else {
+				elm_layout_file_set(s_animation.layout, WVGA_POWER_OFF, GRP_OFF);
+			}
+			break;
+		case 720:
+			_D("Resolution is %dx%d", s_animation.w, s_animation.h);
+			if (state == TYPE_ON) {
+				elm_layout_file_set(s_animation.layout, HD_POWER_ON, GRP_ON);
+			} else {
+				elm_layout_file_set(s_animation.layout, HD_POWER_OFF, GRP_OFF);
+			}
+			break;
+		default:
+			_D("This is Strange resolution, Plz check, %dx%d", s_animation.w, s_animation.h);
+			if (state == TYPE_ON) {
+				elm_layout_file_set(s_animation.layout, HD_POWER_ON, GRP_ON);
+			} else {
+				elm_layout_file_set(s_animation.layout, HD_POWER_ON, GRP_OFF);
+			}
+			break;
 	}
 }
 

@@ -15,5 +15,43 @@
  *
  */
 
-extern int init_animation(int state, const char *msg);
-extern int fini_animation(void);
+
+images {
+#include "720x1280_PowerOn_image.h"
+}
+
+collections {
+	group {
+		name: "poweron";
+
+		parts {
+			part {
+				name: "poweron";
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					image {
+#include "720x1280_PowerOn_part.h"
+					}
+					visible: 1;
+				}
+			}
+		}
+
+		programs {
+			program {
+				name: "poweron";
+				signal: "show";
+				action: STATE_SET "default" 0.0;
+				target: "poweron";
+				transition: LINEAR 6;
+				after: "poweron_end";
+			}
+			program {
+				name: "poweron_end";
+				action: SIGNAL_EMIT "end" "animation";
+			}
+		}
+	}
+}
+

@@ -1,9 +1,5 @@
 /*
- *  boot-animation
- *
- * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
- *
- * Contact: Seungtaek Chung <seungtaek.chung@samsung.com>, Mi-Ju Lee <miju52.lee@samsung.com>, Xi Zhichan <zhichan.xi@samsung.com>
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd All Rights Reserved
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,12 +19,12 @@
 #define PREFIX "/usr"
 #endif
 
-#define MOBILE_EDJ_OFF PREFIX"/share/edje/mobile_poweroff.edj"
-#define MOBILE_EDJ_ON PREFIX"/share/edje/mobile_poweron.edj"
-#define WEARABLE_EDJ_OFF PREFIX"/share/edje/wearable_poweroff.edj"
-#define WEARABLE_EDJ_ON PREFIX"/share/edje/wearable_poweron.edj"
-#define DEFAULT_EDJ_OFF PREFIX"/share/edje/poweroff.edj"
-#define DEFAULT_EDJ_ON PREFIX"/share/edje/poweron.edj"
+#define WEARABLE_POWER_ON PREFIX"/share/edje/360x480_PowerOn.edj"
+#define WEARABLE_POWER_OFF PREFIX"/share/edje/360x480_PowerOff.edj"
+#define WVGA_POWER_ON PREFIX"/share/edje/480x800_PowerOn.edj"
+#define WVGA_POWER_OFF PREFIX"/share/edje/480x800_PowerOff.edj"
+#define HD_POWER_ON PREFIX"/share/edje/720x1280_PowerOn.edj"
+#define HD_POWER_OFF PREFIX"/share/edje/720x1280_PowerOff.edj"
 #define EDJ_OFF "poweroff.edj"
 #define EDJ_ON "poweron.edj"
 #define GRP_OFF "poweroff"
