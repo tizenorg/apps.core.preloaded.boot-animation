@@ -1,12 +1,12 @@
 #sbs-git:slp/pkgs/b/boot-animation boot-animation 0.2 d1bbca3948e4cdb6b2f9e75f176500f452fe6a33
 
-%if "%{?tizen_profile_name}" == "wearable"
+%if "%{?profile}" == "wearable"
 	%define micro_ani ON
 %else
 	%define micro_ani OFF
 %endif
 
-%if "%{?tizen_profile_name}" == "tv"
+%if "%{?profile}" == "tv"
 ExcludeArch: %{arm} %ix86 x86_64
 %endif
 
@@ -51,7 +51,7 @@ Shows an animation and plays a sound when the device is booted or shutdown.
 %define ARCH emulator
 %endif
 
-cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} -DUSE_MICRO_ANI=%{micro_ani} -DARCH=%{ARCH} -DTIZEN_PROFILE_NAME=%{tizen_profile_name}
+cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} -DUSE_MICRO_ANI=%{micro_ani} -DARCH=%{ARCH} -DTIZEN_PROFILE_NAME=%{profile}
 
 make %{?jobs:-j%jobs}
 

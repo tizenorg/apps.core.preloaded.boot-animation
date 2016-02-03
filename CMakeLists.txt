@@ -14,17 +14,17 @@ INCLUDE(FindPkgConfig)
 pkg_check_modules(pkgs REQUIRED
 	elementary
 	mm-bootsound
-#	utilX
+	#utilX
 	vconf
-#        ecore-x
-        evas
-        ecore-evas
-        edje
-#        x11
-		capi-appfw-preference
-		capi-system-info
-		capi-system-system-settings
-)
+	#ecore-x
+	evas
+	ecore-evas
+	edje
+	#x11
+	capi-appfw-preference
+	capi-system-info
+	capi-system-system-settings
+	)
 
 FOREACH(flag ${pkgs_CFLAGS})
 	SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
