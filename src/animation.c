@@ -224,14 +224,13 @@ static int create_window(void)
 	elm_win_indicator_mode_set(s_animation.win, ELM_WIN_INDICATOR_HIDE);
 	evas_object_move(s_animation.win, 0, 0);
 
-	if (s_animation.w > s_animation.h) {
+/*	if (s_animation.w > s_animation.h) {
 		int t;
 		elm_win_rotation_with_resize_set(s_animation.win, 90);
-		/* Update geometry infomration */
 		t = s_animation.w;
 		s_animation.w = s_animation.h;
 		s_animation.h = t;
-	}
+	}*/
 
 	evas_object_show(s_animation.win);
 
