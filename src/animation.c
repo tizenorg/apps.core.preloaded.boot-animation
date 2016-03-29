@@ -99,9 +99,10 @@ static void _edje_cb(void *d, Evas_Object * obj, const char *e, const char *s)
 			evas_object_show(s_animation.txt);
 		}
 		ecore_timer_add(1, _end_cb, NULL);
-	} else
+	} else {
 		_D("TYPE_ON");
 		_end_cb(NULL);
+	}
 }
 
 #define DEFAULT_W 480
