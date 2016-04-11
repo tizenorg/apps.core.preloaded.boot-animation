@@ -84,7 +84,6 @@ static int xready_cb(keynode_t * node, void *user_data)
 	int argc;
 	char **argv;
 	int type = TYPE_UNKNOWN;
-	int clear_type = TYPE_UNKNOWN;
 	int soundon = 1;	/* default sound on */
 	struct args *args = user_data;
 	char wav_path[256];
@@ -137,7 +136,6 @@ static int xready_cb(keynode_t * node, void *user_data)
 				perror("strdup");
 			continue;
 		case 'c':
-			clear_type = TYPE_CLEAR;
 			continue;
 		default:
 			type = TYPE_UNKNOWN;

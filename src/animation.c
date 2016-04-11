@@ -250,8 +250,6 @@ int init_animation(int state, const char *msg)
 	_D("Init animation");
 	printf("Init animation\n");
 
-	Ecore_Timer *timer = NULL;
-
 	s_animation.state = state;
 
 	if (create_window() == EXIT_FAILURE) {
