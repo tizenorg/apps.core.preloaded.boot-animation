@@ -55,7 +55,7 @@ collections {
 				signal: "show";
 				action: STATE_SET "default" 0.0;
 				target: "poweron";
-				transition: LINEAR 6.5;
+				transition: LINEAR 3.0;
 				after: "poweron_end";
 			}
 			program {
