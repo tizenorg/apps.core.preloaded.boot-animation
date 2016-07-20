@@ -11,6 +11,7 @@ EnvironmentFile=/run/xdg-root-env
 
 Type=oneshot
 Nice=-20
+SmackProcessLabel=System
 ExecStart=/usr/bin/boot-animation --start
 ExecStart=/bin/sleep 2
 

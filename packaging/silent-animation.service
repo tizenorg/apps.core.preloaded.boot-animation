@@ -7,6 +7,7 @@ ConditionKernelCommandLine=|bootmode=silent
 
 [Service]
 Type=oneshot
+SmackProcessLabel=System
 ExecStart=/usr/bin/vconftool set -t int memory/boot_animation/finished 1 -f
 ExecStart=/bin/sleep 3
 

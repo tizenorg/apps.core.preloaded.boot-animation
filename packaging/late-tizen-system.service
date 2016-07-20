@@ -5,6 +5,7 @@ Before=tizen-system.target
 
 [Service]
 Type=oneshot
+SmackProcessLabel=System
 ExecStart=/bin/sleep 3
 
 [Install]
